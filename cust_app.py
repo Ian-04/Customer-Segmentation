@@ -16,7 +16,7 @@ import streamlit as st
 data = pd.read_csv("CC GENERAL.csv")
 
 # Load the model
-model_kmeans = joblib.load("D:/Projects/Kaggle/credit_scroring/Cust_seg_kmeans.pkl")
+model_kmeans = joblib.load("Cust_seg_kmeans.pkl")
 
 # Feature Selection
 features = ['BALANCE','BALANCE_FREQUENCY','PURCHASES','ONEOFF_PURCHASES','INSTALLMENTS_PURCHASES','CASH_ADVANCE','CREDIT_LIMIT','PAYMENTS','PRC_FULL_PAYMENT','TENURE']
@@ -165,6 +165,7 @@ elif page == "Distributions":
         "min": "Min",
         "max": "Max"
     }))
+
 
 
 
