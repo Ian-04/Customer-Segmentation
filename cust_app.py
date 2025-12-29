@@ -13,7 +13,7 @@ import joblib
 import streamlit as st
 
 # Load the data
-data = pd.read_csv("D:/Projects/Kaggle/credit_scroring/CC GENERAL.csv")
+data = pd.read_csv("CC GENERAL.csv")
 
 # Load the model
 model_kmeans = joblib.load("D:/Projects/Kaggle/credit_scroring/Cust_seg_kmeans.pkl")
@@ -165,5 +165,6 @@ elif page == "Distributions":
         "min": "Min",
         "max": "Max"
     }))
+
 
 
